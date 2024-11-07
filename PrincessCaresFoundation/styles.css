@@ -1,0 +1,396 @@
+/* Code Attribution
+   R. Moodley, Varsity College Durban North Module Manual 2024
+   E. Adam, Varsity College Durban North Sync Up Sessions 2024
+   HTML and CSS For Absolute Beginners | 2024 Crash Course
+   https://youtu.be/MBlkKE0GYGg
+   How To Make A Logo With HTML And CSS | Instagram Logo Design Using CSS
+   https://youtu.be/im_uQNk50PY
+   Accessed: 20 September 2024
+*/
+
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px); /* Responsive sizing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.content-item:hover {
+    transform: scale(1.05); /* Hover effect for scaling */
+}
+
+.content-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Heading styles */
+h2, h3 {
+    color: #388E3C; /* Use the same olive green shade */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+body {
+    background-color: #f9f9f9; /* Light background for better contrast */
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark gray text for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50; /* Avocado green */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    font-size: 2.5rem; /* Use relative units for better scalability */
+}
+
+/* Logo */
+.logo img {
+    height: 150px; /* Set a more manageable logo height */
+    transition: transform 0.3s; /* Add hover effect */
+}
+
+
+/* Navbar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center nav items */
+    background-color: #2E7D32; /* Olive green */
+}
+
+nav li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+nav li a:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Limit max width for better readability */
+    margin: 0 auto; /* Center main content */
+}
+
+/* Section styles */
+section {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+h2 {
+    color: #2E7D32; /* Dark olive green */
+    margin-bottom: 10px; /* Space below headings */
+}
+
+h3 {
+    color: #388E3C; /* Another shade of green for subheadings */
+}
+
+/* Footer styling */
+/* Code Attribution
+    How To Make A Logo With HTML And CSS | Instagram Logo Design Using CSS
+   https://youtu.be/im_uQNk50PY
+   Accessed: 20 September 2024
+*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a img {
+    height: 30px; /* Set a more manageable size for footer icons */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for scale and opacity */
+}
+
+footer a:hover img {
+    transform: scale(1.1); /* Scale up on hover */
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
+/* Ensure footer text is centered and has hover effect */
+footer p {
+    margin: 0; /* Remove margin for better alignment */
+}
+
+footer p:hover {
+    text-decoration: underline; /* Underline text on hover */
+}
+
+img {
+    height: 300px; /* Set a more manageable image height */
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners for images */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+/* Hover effect for images */
+img:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* About us and news section styles */
+.about-us, .news-section {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-around; /* Space items evenly */
+}
+
+/* Add a class for item containers */
+.item-container {
+    background: white; /* White background for items */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding for items */
+    margin: 10px; /* Margin for spacing */
+    flex: 1 1 calc(30% - 20px); /* Responsive item sizing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+/* Product grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-around; /* Space products evenly */
+}
+
+.product-item {
+    background: white; /* White background for product items */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px); /* Responsive item sizing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50; /* Avocado green */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements */
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center form */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Larger text for better readability */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+/* Ensure this CSS is in your styles.css */
+.contact-container {
+    display: flex;
+    gap: 20px; /* Optional: adds space between form and map */
+    align-items: flex-start; /* Align items at the top */
+}
+
+#contactForm {
+    flex: 1;
+    max-width: 400px; /* Optional: sets max width for form */
+}
+
+iframe {
+    flex: 1;
+    max-width: 600px; /* Optional: sets max width for map */
+    height: 450px; /* Matches your iframe height */
+    border: none;
+}
+/* Style for the full-screen background video */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Prevents video from being clicked */
+}
+
+/* Style for the foreground content */
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin-top: 20%;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items on smaller screens */
+    }
+
+    .product-grid {
+        flex-direction: column; /* Stack products vertically */
+        align-items: center; /* Center products */
+    }
+
+    .product-item {
+        flex: 1 1 100%; /* Full width on mobile */
+    }
+    iframe {
+        max-width: 100%;
+        height: auto;
+        border: none;
+    }
+    /* Ensure the body covers the entire viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Ensure the body covers the entire viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Style for the video background */
+.video-background {
+    position: fixed; /* Keep the video fixed in place */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Place it behind other content */
+}
+
+/* Style for the iframe */
+.video-background iframe {
+    position: absolute; /* Position absolutely */
+    top: 50%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    transform: translate(-50%, -50%); /* Translate back to center */
+    pointer-events: none; /* Prevent interaction with the video */
+}
+
+/* Additional styles for your content to appear above the video */
+header, main, footer {
+    position: relative;
+    z-index: 2; /* Bring content above the video */
+    color: white; /* Change text color for readability */
+}
+
+/* Additional styling for your content can go here */
+
+
+}
+@media (max-width: 960px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    nav li {
+        margin: 10px 0; /* Space between items */
+    }
+
+    nav li a {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Slightly smaller font size on smaller screens */
+    }
+
+    .logo img {
+        height: 120px; /* Reduce logo height for smaller screens */
+    }
+
+    header {
+        padding: 15px; /* Adjust padding for header */
+    }
+}
+

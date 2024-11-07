@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us - Princess Cares Foundation</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            color: white; /* Set default text color to white */
+            font-family: Arial, sans-serif; /* Add a default font */
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Add a dark overlay to enhance text visibility */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white; /* Set nav links to white */
+            text-decoration: none;
+        }
+
+        main {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        footer {
+            position: relative;
+            z-index: 1;
+            padding: 10px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Dark background for footer */
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background Container -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="_videos/caresfoundationvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <header>
+        <h1>The Princess Cares Foundation</h1> 
+        <div class="logo" style="float: left; margin:10px"> 
+            <img src="_images/logo.png" alt="logo" height="100px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3> Making dreams come true, one child at a time.</h3>
+            <p>
+                <h4> About Us Information for Princess Cares Foundation:</h4> 
+                Welcome to the Princess Cares Foundation!
+                I founded this organization with a deep passion to make a difference in the lives of others. Inspired by the kindness and compassion of my heart, I wanted to create a platform where we can come together to support and uplift one another. Our mission is to care, protect, and provide for our communities in need. With love, dedication, and your support, we can create a ripple effect of kindness that touches hearts and changes lives.
+            </p>
+            <img src="_images/gaza.jpeg" height="300px">
+            <img src="_images/smiles.jpg" height="300px">
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 - The Princess Cares Foundation - All rights reserved
+            <br> 
+            English - Republic of South Africa   
+            <br> 
+            <a href="https://www.instagram.com/princessantonionqobilemhlongo" target="_blank">
+                <img src="_images/Ig.jpg" class="social-icon" height="50px">
+            </a>
+            <a href="mailto:princessnqobilemhlongo@gmail.com">
+                <img src="_images/gmail.jpg" height="50px">
+            </a>
+            <a href="https://www.facebook.com/princessantonionqobilemhlongo" target="_blank">
+                <img src="_images/fbk.jpg" height="50px"> 
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

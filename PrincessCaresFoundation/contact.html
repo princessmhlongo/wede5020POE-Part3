@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us - Princess Cares Foundation</title>
+</head>
+<body>
+    <header>
+        <h1>The Princess Cares Foundation</h1> 
+        <div class="logo"style="float: left; margin:10px"> 
+            <img src="_images/logo.png"   alt="logo" height="100px">
+        </div>
+<!-- Code Attribution
+         R. Moodley, Varsity College Durban North Module Manual 2024
+    -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+    
+        <h3> Making dreams come true, one child at a time.</h3>
+      
+    <!-- 
+    Form Validation and Success Message Script
+    Author: ChatGPT (OpenAI)
+    Year: 2024/ Novemmber 02
+    Purpose: This code validates the email input for correct format and displays an error message if the email is incorrect.
+             Upon successful form submission, it displays a thank you message and resets the form fields.
+
+    Attribution: This code was created by ChatGPT, an AI developed by OpenAI, in response to user requirements for a form validation and success message feature.
+    License: MIT License (Feel free to modify and use as needed)
+-->
+    <div class=" contact-container">
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+    <p id="formMessage"></p>
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            const email = document.getElementById("email").value;
+            const formMessage = document.getElementById("formMessage");
+            
+            // Basic email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                formMessage.textContent = "Your email address seems to be invalid, please enter a valid email address.";
+                formMessage.style.color = "red";
+                return;
+            }
+    
+            // Success message after correct form submission
+            formMessage.textContent = "Thank you for filling out the form!";
+            formMessage.style.color = "green";
+            
+            // Reset the form
+            document.getElementById("contactForm").reset();
+        });
+    </script>
+    
+         
+            <br>
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.2980544435495!2d30.938266075391155!3d-29.76902197506348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7022d26c5dc3f%3A0x2c648027f51851e3!2sKingdom%20Ave%2C%20Earlsfield%2C%20Newlands%20West%2C%204037!5e0!3m2!1sen!2sza!4v1723634339704!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+         <!-- Code Attribution
+         R. Moodley, Varsity College Durban North Module Manual 2024
+    -->
+    <br>
+    
+    Phone: +276 17 685 981
+    <br> 
+    Email: princessantonionqobilemhlongo@gmail.com
+    <br> 
+    Email for General Inquiries: info@princesscaresfoundation.co.za
+    <br> 
+    Fax: +27 17 685 982
+    <br>
+        
+        </section>
+    </main>
+<!-- Code Attribution
+         R. Moodley, Varsity College Durban North Module Manual 2024
+    -->
+    <footer>
+        <p>&copy; 2024 - The Princess Cares Foundation- All rights reserved
+            <br> 
+            English - Republic of South Africa   
+            <br> 
+            <!-- Code Attribution
+         R. Moodley, Varsity College Durban North Module Manual 2024
+          How To Make A Logo With HTML And CSS | Instagram Logo Design Using CSS
+   https://youtu.be/im_uQNk50PY
+   Accessed: 20 September 2024
+    -->
+            <a href="https://www.instagram.com/princessantonionqobilemhlongo" target="_blank">
+                <br>
+                <img src="_images/Ig.jpg" class="social-icon" height="50px">
+                
+            </a>
+            <a href="mailto:princessnqobilemhlongo@gmail.com">
+                <img src="_images/gmail.jpg" height="50px">
+            </a>
+            <a href="https://www.facebook.com/princessantonionqobilemhlongo" target="_blank">
+                <img src="_images/fbk.jpg" height="50px"> 
+             </a>
+        </p>
+    </footer>
+
+
+</body>
+</html>
